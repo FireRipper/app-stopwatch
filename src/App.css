@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	line-height: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ol, ul {
+	list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+blockquote, q {
+	quotes: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html, body, #root {
+	height: 100%;
+	width: 100%;
+}
+
+#root {
+	background: #5352ed;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.stopwatch {
+	background: #fff;
+	padding: 30px 15px;
+	border-radius: 5px;
+}
+
+.stopwatch-top {
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: #2f3542;
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 20px;
+	margin: 4px;
+	border: 1px solid rgba(255, 255, 255, 0);
+	border-radius: 2em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	color: #FFF;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	transition: all 0.2s;
+}
+
+.btn:hover {
+	cursor: pointer;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.start-button {
+	background-color: #4e9af1;
+}
+
+.stop-button {
+	background-color: #f14e4e;
+}
+
+.reset-button {
+	background-color: #4ef18f;
+}
+
+.wait-button {
+	background-color: #f1bb4e;
 }
